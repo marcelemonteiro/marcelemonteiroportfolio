@@ -31,11 +31,11 @@ export default function About() {
           Entre em contato
         </h2>
 
-        <div className="flex gap-4">
+        <div className="grid grid-cols-1 md:flex gap-4 pb-16">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/marcele-monteiro/"
-            className="bg-red-300 text-slate-800 p-4 rounded-md flex gap-2 hover:bg-pink-500"
+            className="bg-red-300 text-slate-800 p-4 rounded-md flex justify-center gap-2 hover:bg-pink-500"
           >
             LinkedIn
             <Image src={linkIcon} alt="Link Icon" width={20} />
@@ -44,19 +44,15 @@ export default function About() {
           <a
             target="_blank"
             href="https://github.com/marcelemonteiro"
-            className=" bg-red-300 text-slate-800 p-4 rounded-md flex gap-2 hover:bg-pink-500"
+            className=" bg-red-300 text-slate-800 p-4 rounded-md flex justify-center gap-2 hover:bg-pink-500"
           >
             GitHub
             <Image src={linkIcon} alt="Link Icon" width={20} />
           </a>
 
-          <button
-            type="button"
-            className="bg-red-300 text-slate-800 p-4 rounded-md disabled:bg-slate-800 disabled:text-slate-50"
-            disabled
-          >
-            Email: marcelepmonteiro@gmail.com
-          </button>
+          <div className="group p-4 rounded-md bg-slate-800 text-slate-50 relative overflow-hidden">
+            E-mail: marcelepmonteiro@gmail.com
+          </div>
         </div>
       </div>
     </section>
