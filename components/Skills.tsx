@@ -55,7 +55,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="bg-purple-700 flex flex-col items-center py-24">
+    <section className="bg-pink-700 flex flex-col items-center py-24">
       <div className="w-full max-w-5xl p-6 lg:p-0">
         <h2 className="text-xl pb-8 underline decoration-wavy underline-offset-8 decoration-red-300">
           Ferramentas e Tecnologias

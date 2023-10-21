@@ -16,8 +16,8 @@ export default function Header() {
               <li className="text-slate-50" key={link.name}>
                 <ActiveLink
                   href={link.route}
-                  className="py-2 hover:border-b-2 hover:border-purple-500"
-                  activeClassName="font-bold border-b-2 border-purple-500"
+                  className="py-2 hover:border-b-2 hover:border-pink-500"
+                  activeClassName="font-bold border-b-2 border-pink-500"
                 >
                   {link.name}
                 </ActiveLink>

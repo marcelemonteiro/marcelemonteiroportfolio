@@ -13,7 +13,7 @@ export default function Home() {
         <div className="max-w-5xl flex flex-col items-center justify-center lg:flex-row py-24">
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <h2 className="text-2xl md:text-4xl">Marcele Monteiro</h2>
-            <h2 className="text-2xl md:text-4xl text-purple-500">
+            <h2 className="text-2xl md:text-4xl text-pink-500">
               Desenvolvedora Web
             </h2>
 
