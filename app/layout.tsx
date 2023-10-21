@@ -22,9 +22,9 @@ export default function RootLayout({
     <html lang="pt-br" suppressHydrationWarning>
       <body className={inter.className}>
         <Theme>
-          <div className="w-full flex flex-col items-center text-slate-950 dark:text-slate-200 bg-slate-50 dark:bg-slate-800">
+          <div className="text-slate-200 bg-slate-900 m-0">
             <Header />
-            <div className="max-w-5xl">{children}</div>
+            {children}
             <Footer />
           </div>
         </Theme>

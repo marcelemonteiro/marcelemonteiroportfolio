@@ -1,0 +1,14 @@
+export { default as reactIcon } from "./react.svg";
+export { default as nextIcon } from "./next.svg";
+export { default as htmlIcon } from "./html.svg";
+export { default as cssIcon } from "./css.svg";
+export { default as javascriptIcon } from "./javascript.svg";
+export { default as typescriptIcon } from "./typescript.svg";
+export { default as figmaIcon } from "./figma.svg";
+export { default as gitIcon } from "./git.svg";
+export { default as githubIcon } from "./github.svg";
+export { default as pythonIcon } from "./python.svg";
+export { default as javaIcon } from "./java.svg";
+export { default as restfulIcon } from "./restful.svg";
+export { default as commandIcon } from "./command.svg";
+export { default as codeIcon } from "./code.svg";
