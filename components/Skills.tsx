@@ -101,7 +101,9 @@ export default function Skills() {
               className="md:hidden"
               onClick={() => setExpandMobile(true)}
             >
-              <span className="border-b-2 dark:border-slate-600">Ver mais</span>
+              <span className="bg-pink-800 rounded-md p-4 block uppercase text-sm">
+                Ver mais
+              </span>
             </button>
           )}
 
