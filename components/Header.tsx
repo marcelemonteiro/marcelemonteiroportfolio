@@ -1,14 +1,7 @@
-"use client";
-
 import Image from "next/image";
 import ActiveLink from "./ActiveLink";
-import DarkModeIcon from "./icons/DarkModeIcon";
-import LightModeIcon from "./icons/LightModeIcon";
-import { useTheme } from "next-themes";
 
 export default function Header() {
-  const { theme, setTheme } = useTheme();
-
   const navLinks = [
     { name: "Home", route: "/" },
     { name: "About", route: "/about" },
@@ -56,27 +49,6 @@ export default function Header() {
             ENG
           </button>
         </div>
-
-        {/* <div className="flex flex-col px-2">
-          <input
-            type="checkbox"
-            id="light-switch"
-            className="sr-only"
-            checked={theme === "light"}
-            onChange={() => {
-              if (theme === "dark") {
-                return setTheme("light");
-              }
-              return setTheme("dark");
-            }}
-          />
-
-          <label className="relative cursor-pointer" htmlFor="light-switch">
-            <LightModeIcon />
-            <DarkModeIcon />
-            <span className="sr-only">Switch to light / dark version</span>
-          </label>
-        </div> */}
       </div>
     </header>
   );
