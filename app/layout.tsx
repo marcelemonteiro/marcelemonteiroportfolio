@@ -19,8 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="dark">
-      <body className={inter.className}>
-        <div className="text-slate-200 bg-slate-900 m-0">
+      <body
+        className={`${inter.className} text-slate-200 bg-slate-900 m-0 min-h-screen"`}
+      >
+        <div className="min-h-screen relative">
           <Header />
           {children}
           <Footer />

@@ -12,3 +12,4 @@ export { default as javaIcon } from "./java.svg";
 export { default as restfulIcon } from "./restful.svg";
 export { default as commandIcon } from "./command.svg";
 export { default as codeIcon } from "./code.svg";
+export { default as linkIcon } from "./link.svg";
