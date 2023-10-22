@@ -17,12 +17,13 @@ export default function About() {
 
         <p>{t("aboutMe")}</p>
 
-        <button
-          type="button"
-          className="bg-red-300 text-slate-800 p-4 rounded-md mt-4"
+        <a
+          href="/assets/pdf/marcele-monteiro-cv.pdf"
+          target="_blank"
+          className="inline-block bg-red-300 text-slate-800 p-4 rounded-md mt-4"
         >
           {t("pdfButton")}
-        </button>
+        </a>
 
         <h2 className="text-xl py-8 underline decoration-wavy underline-offset-8 decoration-red-300">
           {t("contactTitle")}
