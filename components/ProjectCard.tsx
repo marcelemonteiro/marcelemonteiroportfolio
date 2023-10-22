@@ -28,7 +28,7 @@ export default function ProjectCard({
         </span>
       )}
 
-      <div className="flex">
+      <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="p-4">
           <Image src={imageSrc} alt={title} width={600} height={600} />
         </div>
