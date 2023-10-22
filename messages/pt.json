@@ -6,13 +6,21 @@
     "homepage": "Página Inicial",
     "aboutpage": "Sobre mim",
     "skills": "Ferramentas e Tecnologias",
-    "seeMoreButton": "Ver mais",
-    "projects": "Meus projetos"
+    "seeMoreButton": "Ver mais"
   },
   "About": {
     "title": "Sobre mim",
     "aboutMe": "lorem lorem lorem lorem",
     "pdfButton": "Baixar currículo em PDF",
     "contactTitle": "Entre em contato"
+  },
+  "Projects": {
+    "title": "Meus Projetos",
+    "rock-paper-scissors": "Rock, Paper, Scissors game",
+    "rock-paper-scissors-description": "Desafio do Front-end Mentor - Site que propõe desafios de interfaces para implementar.",
+    "used-technologies": "Tecnologias utilizadas:",
+    "see-website": "Ver site",
+    "see-code": "Ver código",
+    "study-case": "Caso de estudo"
   }
 }

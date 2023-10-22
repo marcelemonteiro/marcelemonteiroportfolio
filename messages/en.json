@@ -6,13 +6,21 @@
     "homepage": "Home",
     "aboutpage": "About",
     "skills": "Tools and Technologies",
-    "seeMoreButton": "See more",
-    "projects": "My projects"
+    "seeMoreButton": "See more"
   },
   "About": {
     "title": "About me",
     "aboutMe": "lorem lorem lorem lorem",
     "pdfButton": "Download PDF Currilum",
     "contactTitle": "Get in touch"
+  },
+  "Projects": {
+    "title": "My Projects",
+    "rock-paper-scissors": "Rock, Paper, Scissors game",
+    "rock-paper-scissors-description": "Front-end Mentor Challenge",
+    "used-technologies": "Used Technologies:",
+    "see-website": "Preview site",
+    "see-code": "View code",
+    "study-case": "Study Case"
   }
 }
