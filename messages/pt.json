@@ -1,0 +1,18 @@
+{
+  "Index": {
+    "subtitle": "Desenvolvedora Web",
+    "greeting": "Olá",
+    "introduction": "Seja bem-vindo(a) ao meu portfólio!",
+    "homepage": "Página Inicial",
+    "aboutpage": "Sobre mim",
+    "skills": "Ferramentas e Tecnologias",
+    "seeMoreButton": "Ver mais",
+    "projects": "Meus projetos"
+  },
+  "About": {
+    "title": "Sobre mim",
+    "aboutMe": "lorem lorem lorem lorem",
+    "pdfButton": "Baixar currículo em PDF",
+    "contactTitle": "Entre em contato"
+  }
+}

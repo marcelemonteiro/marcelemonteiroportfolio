@@ -1,5 +1,7 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+
 import Image from "next/image";
 
 import {
@@ -20,6 +22,7 @@ import {
 import { useState } from "react";
 
 export default function Skills() {
+  const t = useTranslations("Index");
   const [expandMobile, setExpandMobile] = useState(false);
 
   const icons: { [key: string]: any } = {
@@ -58,7 +61,7 @@ export default function Skills() {
     <section className="bg-pink-700 flex flex-col items-center py-24">
       <div className="w-full max-w-5xl p-6 lg:p-0">
         <h2 className="text-xl pb-8 underline decoration-wavy underline-offset-8 decoration-red-300">
-          Ferramentas e Tecnologias
+          {t("skills")}
         </h2>
 
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-12 mt-6">
@@ -102,7 +105,7 @@ export default function Skills() {
               onClick={() => setExpandMobile(true)}
             >
               <span className="bg-pink-800 rounded-md p-4 block uppercase text-sm">
-                Ver mais
+                {t("seeMoreButton")}
               </span>
             </button>
           )}

@@ -1,0 +1,18 @@
+{
+  "Index": {
+    "subtitle": "Web Developer",
+    "greeting": "Hi",
+    "introduction": "Welcome to my portfolio!",
+    "homepage": "Home",
+    "aboutpage": "About",
+    "skills": "Tools and Technologies",
+    "seeMoreButton": "See more",
+    "projects": "My projects"
+  },
+  "About": {
+    "title": "About me",
+    "aboutMe": "lorem lorem lorem lorem",
+    "pdfButton": "Download PDF Currilum",
+    "contactTitle": "Get in touch"
+  }
+}

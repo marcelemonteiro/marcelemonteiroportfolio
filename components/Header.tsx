@@ -1,15 +1,21 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 import Image from "next/image";
 import ActiveLink from "./ActiveLink";
 
-export default function Header() {
+export default function Header({ lang }: { lang: string }) {
+  const t = useTranslations("Index");
+
   const navLinks = [
-    { name: "Home", route: "/" },
-    { name: "About", route: "/about" },
+    { name: t("homepage"), route: `/${lang === "pt" ? "" : lang}` },
+    { name: t("aboutpage"), route: `/${lang === "pt" ? "" : lang + "/"}about` },
   ];
 
   return (
-    <header className="w-full p-4 flex justify-center md:pt-6">
-      <div className="w-full max-w-5xl flex flex-wrap items-center justify-between gap-4">
+    <header className="w-full p-4 pb-0 md:pb-4 flex justify-center md:pt-6">
+      <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
         <nav className="flex-1">
           <ul className="flex items-center gap-4">
             {navLinks.map((link) => (
@@ -27,7 +33,12 @@ export default function Header() {
         </nav>
 
         <div className="flex gap-4 border-2 border-slate-200 dark:border-slate-600 rounded-md">
-          <button className="flex items-center gap-2 text-slate-50 font-bold bg-slate-800 px-4 py-2 rounded-md text-sm hover:opacity-60">
+          <a
+            href="/pt"
+            className={`flex items-center gap-2 text-slate-50 text-sm hover:opacity-60 px-4 py-2 ${
+              lang === "pt" && "font-bold bg-slate-800  rounded-md"
+            }`}
+          >
             <Image
               src="/assets/images/Brazil_flag.png"
               alt="Brazil flag"
@@ -36,9 +47,14 @@ export default function Header() {
               className="w-6 h-4"
             />
             PT-BR
-          </button>
+          </a>
 
-          <button className="flex items-center gap-2 text-slate-50 text-sm hover:opacity-60 px-4 py-2">
+          <a
+            href="/en"
+            className={`flex items-center gap-2 text-slate-50 text-sm hover:opacity-60 px-4 py-2 ${
+              lang === "en" && "font-bold bg-slate-800  rounded-md"
+            }`}
+          >
             <Image
               src="/assets/images/US_flag.png"
               alt="US flag"
@@ -47,7 +63,7 @@ export default function Header() {
               className="w-6 h-4"
             />
             ENG
-          </button>
+          </a>
         </div>
       </div>
     </header>
