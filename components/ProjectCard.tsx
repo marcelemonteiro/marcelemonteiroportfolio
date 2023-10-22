@@ -48,6 +48,7 @@ export default function ProjectCard({
           <div className="flex text-sm">
             <a
               href={siteURl}
+              target="_blank"
               className="flex items-center justify-center w-full py-2 px-6 mr-2 text-center uppercase text-white bg-pink-500 rounded-sm hover:opacity-60"
             >
               {t("see-website")}
@@ -55,6 +56,7 @@ export default function ProjectCard({
 
             <a
               href={codeURL}
+              target="_blank"
               className="flex items-center justify-center w-full py-2 px-6 mr-2  text-center uppercase text-pink-500 border-2 border-pink-500 rounded-sm hover:opacity-60 dark:bg-slate-800"
             >
               {t("see-code")}
