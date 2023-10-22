@@ -14,7 +14,7 @@ export function generateStaticParams() {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Home | Marcele Monteiro",
+  title: "Marcele Monteiro",
   description: "Marcele Monteiro's Portfolio",
 };
 
