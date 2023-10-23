@@ -10,7 +10,7 @@ export default function Header({ lang }: { lang: string }) {
 
   const navLinks = [
     { name: t("homepage"), route: `/${lang}` },
-    { name: t("aboutpage"), route: `${lang && "/" + lang}/about` },
+    { name: t("aboutpage"), route: `/${lang}/about` },
   ];
 
   return (
