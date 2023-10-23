@@ -5,20 +5,20 @@
     "introduction": "Welcome to my portfolio!",
     "homepage": "Home",
     "aboutpage": "About",
-    "skills": "Tools and Technologies",
+    "skills": "Skills & Tools",
     "seeMoreButton": "See more"
   },
   "About": {
     "title": "About me",
-    "aboutMe": "lorem lorem lorem lorem",
-    "pdfButton": "Download PDF Currilum",
+    "aboutMe": "I've always had a great appreciation for building interfaces, from creating simple themes on Tumblr or Blogspot (good times...) to creating more complex websites with frontend and backend. I'm also very interested in issues such as user experience, accessibility and clean code, I always try to demonstrate this in my codes and projects.\nCurrently studying Information Systems at Universidade Veiga de Almeida with completion scheduled for June 2025.\nFrom December 2021 to December 2023 I had the opportunity to carry out an internship in front-end web development at the Public Ministry of the State of Rio de Janeiro (MPRJ) in the GADG sector, where I was able to actively participate in the Parque Digital project - a tool to assist the prosecutor in his daily tasks.",
+    "pdfButton": "Download CV in PDF",
     "contactTitle": "Get in touch"
   },
   "Projects": {
     "title": "My Projects",
     "rock-paper-scissors": "Rock, Paper, Scissors game",
-    "rock-paper-scissors-description": "Front-end Mentor Challenge",
-    "used-technologies": "Used Technologies:",
+    "rock-paper-scissors-description": "Website for the classic game 'Rock, Paper, Scissors' where you can play against the computer. This project is a challenge from Front-end Mentor, a website with several interface challenges to implement and improve your front-end web development techniques.",
+    "used-technologies": "Build with:",
     "see-website": "Preview site",
     "see-code": "View code",
     "study-case": "Study Case"

@@ -11,11 +11,17 @@ export default function About() {
   return (
     <section className="flex flex-col items-center py-6">
       <div className="w-full max-w-5xl p-6 lg:p-0">
-        <h2 className="text-xl pb-8 underline decoration-wavy underline-offset-8 decoration-red-300">
+        <h2 className="text-xl pb-4 underline decoration-wavy underline-offset-8 decoration-red-300">
           {t("title")}
         </h2>
 
-        <p>{t("aboutMe")}</p>
+        {t("aboutMe")
+          .split("\n")
+          .map((text, index) => (
+            <p key={index} className="my-4">
+              {text}
+            </p>
+          ))}
 
         <a
           href="/assets/pdf/marcele-monteiro-cv.pdf"
