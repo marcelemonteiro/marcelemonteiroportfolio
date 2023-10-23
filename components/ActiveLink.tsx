@@ -19,10 +19,11 @@ export default function ActiveLink({
   const { href } = props;
   const isActive = pathName === href;
 
-  console.log([isActive, pathName, href]);
-
   return (
-    <Link className={`${isActive && activeClassName} ${className}`} {...props}>
+    <Link
+      className={`${isActive ? activeClassName : ""} ${className}`}
+      {...props}
+    >
       {children}
     </Link>
   );
