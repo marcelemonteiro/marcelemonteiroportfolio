@@ -39,7 +39,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="min-h-screen relative">
-            <Header lang={locale} />
+            <Header lang={locale === "pt" ? "" : locale} />
             {children}
             <Footer />
           </div>

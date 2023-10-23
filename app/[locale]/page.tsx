@@ -34,8 +34,8 @@ export default function Home() {
           <Image
             src={girlCoding}
             alt="Girl coding"
-            width={600}
             className="invert order-1 lg:order-2"
+            priority
           />
         </div>
       </div>
@@ -46,8 +46,7 @@ export default function Home() {
         <Image
           src={codeIcon}
           alt="Code Icon"
-          className="invert opacity-10 absolute -bottom-24 right-0 lg:left-3/4"
-          width={200}
+          className="w-52 invert opacity-10 absolute -bottom-24 right-0 lg:left-3/4"
         />
       </div>
 

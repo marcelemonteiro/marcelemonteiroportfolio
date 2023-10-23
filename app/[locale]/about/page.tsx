@@ -36,7 +36,7 @@ export default function About() {
             className="bg-red-300 text-slate-800 p-4 rounded-md flex justify-center gap-2 hover:bg-pink-500"
           >
             LinkedIn
-            <Image src={linkIcon} alt="Link Icon" width={20} />
+            <Image src={linkIcon} alt="Link Icon" width={20} height={20} />
           </a>
 
           <a
@@ -45,7 +45,7 @@ export default function About() {
             className=" bg-red-300 text-slate-800 p-4 rounded-md flex justify-center gap-2 hover:bg-pink-500"
           >
             GitHub
-            <Image src={linkIcon} alt="Link Icon" width={20} />
+            <Image src={linkIcon} alt="Link Icon" width={20} height={20} />
           </a>
 
           <div className="group p-4 rounded-md bg-slate-800 text-slate-50 relative overflow-hidden">

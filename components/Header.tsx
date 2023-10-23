@@ -9,8 +9,8 @@ export default function Header({ lang }: { lang: string }) {
   const t = useTranslations("Index");
 
   const navLinks = [
-    { name: t("homepage"), route: `/${lang === "pt" ? "" : lang}` },
-    { name: t("aboutpage"), route: `/${lang === "pt" ? "" : lang + "/"}about` },
+    { name: t("homepage"), route: `/${lang}` },
+    { name: t("aboutpage"), route: `${lang && "/" + lang}/about` },
   ];
 
   return (
