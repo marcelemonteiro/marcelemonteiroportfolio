@@ -34,7 +34,7 @@ export default function Home() {
           <Image
             src={girlCoding}
             alt="Girl coding"
-            className="invert order-1 lg:order-2"
+            className="w-2/3 invert order-1 lg:order-2"
             priority
           />
         </div>
