@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div className="mx-auto py-20 md:py-32 px-8">
       <div className="flex items-center justify-center sm:justify-start gap-4">
-        <h2 className="text-5xl md:text-7xl">marcele monteiro</h2>
+        <h2 className="text-5xl md:text-7xl">Marcele Monteiro</h2>
 
         <div className="flex flex-col sm:flex-row py-4 md:py-0 gap-4">
           <a target="_blank" href="/">
