@@ -18,6 +18,8 @@
     "title": "My Projects",
     "rock-paper-scissors": "Rock, Paper, Scissors game",
     "rock-paper-scissors-description": "Website for the classic game 'Rock, Paper, Scissors' where you can play against the computer. This project is a challenge from Front-end Mentor, a website with several interface challenges to implement and improve your front-end web development techniques.",
+    "shortly": "URL Shortener using T.ly API",
+    "shortly-description": "Website for shortening URLs. This project is a challenge from Front-end Mentor, a website with several interface challenges to implement and improve your front-end web development techniques.",
     "used-technologies": "Build with:",
     "see-website": "Preview site",
     "see-code": "View code",

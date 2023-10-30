@@ -10,7 +10,7 @@
   },
   "About": {
     "title": "Sobre mim",
-    "aboutMe": "Sempre tive muito apreço por construção de interfaces, desde criar simples temas no tumblr ou no blogspot (bons tempos...) a criar site mais complexos com frontend e backend. Também me interesso muito por questões como experiência do usuário, acessibilidade e código limpo, tento sempre demonstrar isso nos meus códigos e projetos.\nAtualmente curso Sistemas de Informação na Universidade Veiga de Almeida com previsão de término para Junho de 2025.\nDe dezembro de 2021 à dezembro de 2023 tive a oportunidade de realizar um estágio em desenvolvimento web front-end no Ministério Público do Estado do Rio de Janeiro (MPRJ) no setor GADG, onde pude participar ativamente do projeto Parque Digital - uma ferramente para auxiliar o promotor nas suas tarefas diárias.",
+    "aboutMe": "Sempre tive muito apreço por construção de interfaces, desde criar simples temas no tumblr ou no blogspot (bons tempos...) a criar site mais complexos com frontend e backend. Também me interesso muito por questões como experiência do usuário, acessibilidade e código limpo, tento sempre demonstrar isso nos meus códigos e projetos.\nAtualmente curso Sistemas de Informação na Universidade Veiga de Almeida com previsão de término para Junho de 2025.\nDesde de dezembro de 2021 faço estágio em desenvolvimento web front-end no Ministério Público do Estado do Rio de Janeiro (MPRJ) no setor GADG, onde pude participar ativamente do projeto Parque Digital - uma ferramente para auxiliar o promotor nas suas tarefas diárias.",
     "pdfButton": "Baixar currículo em PDF",
     "contactTitle": "Entre em contato"
   },
@@ -18,6 +18,8 @@
     "title": "Meus Projetos",
     "rock-paper-scissors": "Rock, Paper, Scissors game",
     "rock-paper-scissors-description": "Site do clássico jogo 'Pedra, papel e tesoura' onde você pode jogar contra o computador. Esse projeto é um desafio do Front-end Mentor, site com vários desafios de interfaces para implementar e aperfeiçoar suas técnicas de desenvolvimento web front-end.",
+    "shortly": "Encurtador de URL usando a API T.ly",
+    "shortly-description": "Site para encurtar URLS utilizando a API T.ly. Esse projeto é um desafio do Front-end Mentor, site com vários desafios de interfaces para implementar e aperfeiçoar suas técnicas de desenvolvimento web front-end.",
     "used-technologies": "Tecnologias utilizadas:",
     "see-website": "Ver site",
     "see-code": "Ver código",

@@ -15,6 +15,16 @@ export default function Projects() {
 
         <ProjectCard
           isStudyCase
+          imageSrc="/assets/images/shortly-project.png"
+          title={t("shortly")}
+          description={t("shortly-description")}
+          tecnologies={["TypeScript", "Next", "Tailwind CSS"]}
+          siteURl="https://url-shortening-api-five-kappa.vercel.app/"
+          codeURL="https://github.com/marcelemonteiro/url-shortening-api"
+        />
+
+        <ProjectCard
+          isStudyCase
           imageSrc="/assets/images/rock-paper-scissors.png"
           title={t("rock-paper-scissors")}
           description={t("rock-paper-scissors-description")}
