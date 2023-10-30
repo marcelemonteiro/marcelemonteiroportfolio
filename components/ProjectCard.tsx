@@ -21,7 +21,7 @@ export default function ProjectCard({
   const t = useTranslations("Projects");
 
   return (
-    <div className="mb-8 border-2 border-slate-700 bg-greenish-gray rounded-xl shadown-lg">
+    <div className="mb-8 border-2 border-slate-200 rounded-xl shadown-lg">
       {isStudyCase && (
         <span className="inline-block ml-4 mt-4 p-2 text-xs uppercase bg-slate-200 dark:bg-slate-800 rounded-md">
           {t("study-case")}
@@ -33,8 +33,8 @@ export default function ProjectCard({
           <Image src={imageSrc} alt={title} width={600} height={600} />
         </div>
 
-        <div className="p-4">
-          <h3 className="text-lg">{title}</h3>
+        <div className="p-4 flex flex-col justify-evenly">
+          <h3 className="text-2xl font-[500]">{title}</h3>
 
           <p className="text-gray-600 dark:text-slate-400">{description}</p>
 
@@ -49,7 +49,7 @@ export default function ProjectCard({
             <a
               href={siteURl}
               target="_blank"
-              className="flex items-center justify-center w-full py-2 px-6 mr-2 text-center uppercase text-white bg-pink-500 rounded-sm hover:opacity-60"
+              className="flex items-center justify-center lg:w-1/3 py-2 px-6 mr-2 text-center uppercase text-white bg-amber-400 rounded-sm hover:opacity-60"
             >
               {t("see-website")}
             </a>
@@ -57,7 +57,7 @@ export default function ProjectCard({
             <a
               href={codeURL}
               target="_blank"
-              className="flex items-center justify-center w-full py-2 px-6 mr-2  text-center uppercase text-pink-500 border-2 border-pink-500 rounded-sm hover:opacity-60 dark:bg-slate-800"
+              className="flex items-center justify-center lg:w-1/3 py-2 px-6 mr-2  text-center uppercase text-amber-400 border-2 border-amber-400 rounded-sm hover:opacity-60 dark:bg-slate-800"
             >
               {t("see-code")}
             </a>

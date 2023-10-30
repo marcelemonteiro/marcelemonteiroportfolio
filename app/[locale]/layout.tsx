@@ -14,7 +14,7 @@ export function generateStaticParams() {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Marcele Monteiro",
+  title: "Marcele Monteiro | Desenvolvedora Front-end",
   description: "Marcele Monteiro's Portfolio",
 };
 
@@ -33,9 +33,9 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale} className="dark">
+    <html lang={locale}>
       <body
-        className={`${inter.className} text-slate-200 bg-greenish-gray m-0 min-h-screen"`}
+        className={`bg-neutral-100 m-0 min-h-screen"`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="min-h-screen relative">

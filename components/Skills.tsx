@@ -58,9 +58,9 @@ export default function Skills() {
   ];
 
   return (
-    <section className="bg-pink-700 flex flex-col items-center py-24">
-      <div className="w-full max-w-5xl p-6 lg:p-0">
-        <h2 className="text-xl pb-8 underline decoration-wavy underline-offset-8 decoration-red-300">
+    <section className="flex flex-col items-center py-24 px-4">
+      <div className="w-full p-6 lg:p-0">
+        <h2 className="text-xl pb-8 underline decoration-wavy underline-offset-8 decoration-amber-400">
           {t("skills")}
         </h2>
 

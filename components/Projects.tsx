@@ -7,9 +7,9 @@ export default function Projects() {
   const t = useTranslations("Projects");
 
   return (
-    <section className="flex flex-col items-center py-24 bg-pink-800">
-      <div className="w-full max-w-5xl p-6 lg:p-0">
-        <h2 className="text-xl pb-8 underline decoration-wavy underline-offset-8 decoration-red-300">
+    <section className="flex flex-col items-center py-4 md:py-18 px-8">
+      <div className="w-full lg:p-0">
+        <h2 className="text-3xl pb-8 font-bold underline decoration-wavy underline-offset-8 decoration-amber-400">
           {t("title")}
         </h2>
 
@@ -18,7 +18,7 @@ export default function Projects() {
           imageSrc="/assets/images/shortly-project.png"
           title={t("shortly")}
           description={t("shortly-description")}
-          tecnologies={["TypeScript", "Next", "Tailwind CSS"]}
+          tecnologies={["TypeScript", "Next", "TailwindCSS"]}
           siteURl="https://url-shortening-api-five-kappa.vercel.app/"
           codeURL="https://github.com/marcelemonteiro/url-shortening-api"
         />
