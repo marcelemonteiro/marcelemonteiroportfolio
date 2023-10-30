@@ -32,11 +32,12 @@ export default function Header({ lang }: { lang: string }) {
           </ul>
         </nav>
 
-        <div className="flex gap-4 border-2 border-slate-200 dark:border-slate-600 rounded-md">
+        <div className="flex border-2 border-slate-200 dark:border-slate-600 rounded-md">
           <a
             href="/pt"
             className={`flex items-center gap-2 text-slate-50 text-sm hover:opacity-60 px-4 py-2 ${
-              lang === "pt" && "font-bold bg-slate-800  rounded-md"
+              lang === "pt" &&
+              "font-bold bg-slate-50 text-greenish-gray rounded-l-sm"
             }`}
           >
             <Image
@@ -52,7 +53,8 @@ export default function Header({ lang }: { lang: string }) {
           <a
             href="/en"
             className={`flex items-center gap-2 text-slate-50 text-sm hover:opacity-60 px-4 py-2 ${
-              lang === "en" && "font-bold bg-slate-800  rounded-md"
+              lang === "en" &&
+              "font-bold bg-slate-50 text-greenish-gray rounded-r-sm"
             }`}
           >
             <Image
