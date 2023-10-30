@@ -21,7 +21,7 @@ export default function ProjectCard({
   const t = useTranslations("Projects");
 
   return (
-    <div className="mb-8 border-2 border-slate-600 bg-slate-700 rounded-xl shadown-lg">
+    <div className="mb-8 border-2 border-slate-700 bg-greenish-gray rounded-xl shadown-lg">
       {isStudyCase && (
         <span className="inline-block ml-4 mt-4 p-2 text-xs uppercase bg-slate-200 dark:bg-slate-800 rounded-md">
           {t("study-case")}

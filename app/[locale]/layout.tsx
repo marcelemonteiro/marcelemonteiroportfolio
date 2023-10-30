@@ -35,7 +35,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="dark">
       <body
-        className={`${inter.className} text-slate-200 bg-slate-900 m-0 min-h-screen"`}
+        className={`${inter.className} text-slate-200 bg-greenish-gray m-0 min-h-screen"`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="min-h-screen relative">
