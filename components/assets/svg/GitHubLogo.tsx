@@ -4,6 +4,7 @@ export default function GitHubLogo({ width }: { width?: string }) {
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
       y="0px"
+      fill="#eee"
       width={width ? width : "30"}
       className="hover:fill-amber-400 transition ease-in-out hover:animate-[spin_1s_ease-in-out]"
       viewBox="0 0 50 50"

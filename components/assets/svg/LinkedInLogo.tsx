@@ -3,6 +3,7 @@ export default function LinkedInLogo({ width }: { width?: string}) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={width ? width :  "25"}
+      fill="#eee"
       className="hover:fill-amber-400 transition ease-in-out hover:animate-[spin_1s_ease-in-out]"
       viewBox="0 0 448 512"
     >

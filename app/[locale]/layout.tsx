@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import Contact from "@/components/Contact";
 
 export function generateStaticParams() {
   return [{ locale: "pt" }, { locale: "en" }];
@@ -35,14 +36,15 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`bg-neutral-100 m-0 min-h-screen"`}
+        className={`bg-gradient-to-br from-fuchsia-900 to-slate-700 lg:text-lg m-0 min-h-screen"`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="min-h-screen relative">
+          <div className="min-h-screen max-w-7xl m-auto">
             <Header lang={locale} />
             {children}
-            <Footer />
           </div>
+          <Contact />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

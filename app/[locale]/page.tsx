@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <Hero />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
       {/* <Skills /> */}
       {/* <div className="relative">
 

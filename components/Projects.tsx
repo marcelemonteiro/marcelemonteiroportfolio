@@ -7,9 +7,9 @@ export default function Projects() {
   const t = useTranslations("Projects");
 
   return (
-    <section className="flex flex-col items-center py-4 md:py-18 px-8">
+    <section className="flex flex-col items-center py-4 md:py-18 px-4 md:px-8 text-neutral-50">
       <div className="w-full lg:p-0">
-        <h2 className="text-3xl pb-8 font-bold underline decoration-wavy underline-offset-8 decoration-amber-400">
+        <h2 className="text-4xl pb-8 font-bold underline decoration-wavy underline-offset-8 decoration-fuchsia-700">
           {t("title")}
         </h2>
 
