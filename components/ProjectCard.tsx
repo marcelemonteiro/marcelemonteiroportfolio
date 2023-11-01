@@ -21,48 +21,34 @@ export default function ProjectCard({
   const t = useTranslations("Projects");
 
   return (
-    <div className="mb-8 border-2 border-slate-200 bg-neutral-100 rounded-xl shadown-lg">
-      {isStudyCase && (
-        <span className="inline-block ml-4 mt-4 p-2 text-xs uppercase bg-slate-200 text-neutral-600 rounded-md">
-          {t("study-case")}
-        </span>
-      )}
+    <div className="p-4 rounded-md border-2 border-neutral-700 shadow-[4px_4px_0px_2px_rgba(51,51,51,1)]">
+      <h3 className="font-bold">{title}</h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <div className="p-4">
-          <Image src={imageSrc} alt={title} width={600} height={600} />
-        </div>
+      <p className="my-3">{description}</p>
 
-        <div className="p-4 flex flex-col justify-evenly">
-          <h3 className="text-2xl font-[500] text-purple-900">{title}</h3>
+      <p>
+        <span className="border-b-2 dark:border-slate-600">
+          {t("used-technologies")}
+        </span>{" "}
+        {tecnologies.join(" ")}
+      </p>
 
-          <p className="text-gray-600 dark:text-slate-400">{description}</p>
+      <div className="flex gap-4 mt-4 pb-2">
+        <a
+          className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+          href={siteURl}
+          target="_blank"
+        >
+          {t("see-website")}
+        </a>
 
-          <p className="my-4 text-gray-600 dark:text-slate-400">
-            <span className="border-b-2 dark:border-slate-600">
-              {t("used-technologies")}
-            </span>{" "}
-            {tecnologies.join(" ")}
-          </p>
-
-          <div className="flex text-sm">
-            <a
-              href={siteURl}
-              target="_blank"
-              className="flex items-center justify-center lg:w-1/3 py-2 px-6 mr-2 text-center uppercase text-white bg-purple-900 rounded-sm hover:opacity-60"
-            >
-              {t("see-website")}
-            </a>
-
-            <a
-              href={codeURL}
-              target="_blank"
-              className="flex items-center justify-center lg:w-1/3 py-2 px-6 mr-2  text-center uppercase text-purple-900 border-2 border-purple-900 rounded-sm hover:opacity-60 dark:bg-slate-800"
-            >
-              {t("see-code")}
-            </a>
-          </div>
-        </div>
+        <a
+          className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+          href={codeURL}
+          target="_blank"
+        >
+          {t("see-code")}
+        </a>
       </div>
     </div>
   );

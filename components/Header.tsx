@@ -1,47 +1,18 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-
-import Image from "next/image";
-
 export default function Header({ lang }: { lang: string }) {
-  const t = useTranslations("Index");
+  const isCurrentLanguage = (str: string) =>
+    str === lang ? "border-b-2 border-white" : "";
 
   return (
-    <header className="flex px-4 md:px-8 py-4">
-      <div className="flex border-2 border-slate-200 rounded-md">
-        <a
-          href="/pt"
-          className={`flex items-center gap-2 text-sm text-neutral-50 hover:opacity-60 px-4 py-2 ${
-            lang === "pt" &&
-            "font-bold bg-slate-50 text-neutral-800 rounded-l-sm"
-          }`}
-        >
-          <Image
-            src="/assets/images/Brazil_flag.png"
-            alt="Brazil flag"
-            width={320}
-            height={224}
-            className="w-6 h-4"
-          />
-          PT-BR
-        </a>
-
+    <header className="bg-gradient-to-r from-violet-500 to-orange-300 border-b-4 text-white text-xl px-4 py-1">
+      <div className="flex justify-center">
         <a
           href="/en"
-          className={`flex items-center gap-2 text-sm text-neutral-50 hover:opacity-60 px-4 py-2 ${
-            lang === "en" &&
-            "font-bold bg-slate-50 text-neutral-800 rounded-r-sm"
-          }`}
+          className={`mr-4 hover:opacity-60 ${isCurrentLanguage("en")}`}
         >
-          <Image
-            src="/assets/images/US_flag.png"
-            alt="US flag"
-            width={320}
-            height={224}
-            className="w-6 h-4"
-          />
-          ENG
+          eng
+        </a>
+        <a href="/pt" className={`hover:opacity-60 ${isCurrentLanguage("pt")}`}>
+          pt-BR
         </a>
       </div>
     </header>

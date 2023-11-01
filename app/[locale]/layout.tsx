@@ -1,18 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { Open_Sans } from "next/font/google";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import { NextIntlClientProvider } from "next-intl";
-import { notFound } from "next/navigation";
-import Contact from "@/components/Contact";
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export function generateStaticParams() {
   return [{ locale: "pt" }, { locale: "en" }];
 }
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Marcele Monteiro | Desenvolvedora Front-end",
@@ -34,17 +32,14 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale}>
-      <body
-        className={`bg-gradient-to-br from-fuchsia-900 to-slate-700 lg:text-lg m-0 min-h-screen"`}
-      >
+    <html lang={locale} className={openSans.className}>
+      <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="min-h-screen max-w-7xl m-auto">
+          <div className="text-xl text-neutral-700">
             <Header lang={locale} />
             {children}
+            <Footer />
           </div>
-          <Contact />
-          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

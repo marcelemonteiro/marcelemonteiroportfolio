@@ -8,9 +8,14 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Projects />
+    <div className="flex justify-center">
+      <div className="w-full max-w-6xl">
+        <Hero />
+        <Projects />
+        {/* <div className="lg:grid grid-cols-[1fr_minmax(900px,_1fr)] gap-4">
+          <Skills />
+        </div> */}
+      </div>
       {/* <Contact /> */}
       {/* <Skills /> */}
       {/* <div className="relative">
@@ -21,7 +26,6 @@ export default function Home() {
           className="w-52 invert opacity-10 absolute -bottom-24 right-0 lg:left-3/4"
         />
       </div> */}
-
-    </main>
+    </div>
   );
 }
