@@ -8,10 +8,10 @@ export default function Hero() {
 
   return (
     <main className="flex flex-wrap lg:gap-4 justify-center md:justify-between py-16 px-4 md:py-32">
-      <div className="flex flex-wrap jus gap-4">
         <h1 className="text-4xl md:text-7xl font-bold order-2 lg:order-1">
           Marcele Monteiro
         </h1>
+      <div className="flex flex-wrap jus gap-4">
 
         <div className="flex pt-6 items-center gap-4 order-1">
           <a href="" target="_blank">

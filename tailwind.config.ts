@@ -6,13 +6,6 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    extend: {
-      colors: {
-        "greenish-gray": "#1c2d36",
-      },
-    },
-  },
   plugins: [],
   darkMode: ["class", '[data-mode="dark"]'],
 };

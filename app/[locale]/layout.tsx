@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
-import { Open_Sans } from "next/font/google";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const openSans = Open_Sans({ subsets: ["latin"] });
 
 export function generateStaticParams() {
   return [{ locale: "pt" }, { locale: "en" }];
@@ -32,13 +29,13 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={locale} className={openSans.className}>
+    <html lang={locale} className="scroll-smooth">
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="text-xl text-neutral-700">
-            <Header lang={locale} />
+          <div className="text-xl text-neutral-200 bg-gradient-to-b from-[#4C0070] via-[#9A0680] to-[#160040]">
+            {/* <Header lang={locale} /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </NextIntlClientProvider>
       </body>

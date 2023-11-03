@@ -1,3 +1,5 @@
+"use client";
+
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Hero from "@/components/Hero";
@@ -5,27 +7,302 @@ import Hero from "@/components/Hero";
 import Image from "next/image";
 import { codeIcon } from "@/public/assets/svg";
 import Contact from "@/components/Contact";
+import { EmailIcon, GitHubLogo, LinkedInLogo } from "@/components/assets/svg";
+import CaretDownIcon from "@/components/assets/CaretDownIcon";
+import { useState } from "react";
+import MenuIcon from "@/components/assets/svg/MenuIcon";
 
 export default function Home() {
-  return (
-    <div className="flex justify-center">
-      <div className="w-full max-w-6xl">
-        <Hero />
-        <Projects />
-        {/* <div className="lg:grid grid-cols-[1fr_minmax(900px,_1fr)] gap-4">
-          <Skills />
-        </div> */}
-      </div>
-      {/* <Contact /> */}
-      {/* <Skills /> */}
-      {/* <div className="relative">
+  const [expandNav, setExpandNav] = useState(false);
 
-        <Image
-          src={codeIcon}
-          alt="Code Icon"
-          className="w-52 invert opacity-10 absolute -bottom-24 right-0 lg:left-3/4"
-        />
-      </div> */}
-    </div>
+  return (
+    <>
+      <div className="flex justify-center">
+        <header className={`fixed z-10 w-full ${expandNav ? "bg-[#4c0070]" :  "bg-[#4c0070cd]"} pt-4 flex flex-col justify-end transition-all ease-linear`}>
+          <button
+            type="button"
+            className="self-end pr-10 pb-4"
+            onClick={() => setExpandNav(!expandNav)}
+          >
+            <MenuIcon />
+          </button>
+
+          <nav
+            className={`self-center w-full ${expandNav ? "max-h-72 py-12" : "max-h-0"} transition-all duration-300 overflow-hidden`}
+          >
+            <ul className="flex flex-col items-center gap-6" onClick={() => setExpandNav(false)}>
+              <li>
+                <a href="#about">Sobre</a>
+              </li>
+
+              <li>
+                <a href="#skills">Habilidades</a>
+              </li>
+
+              <li>
+                <a href="#portfolio">Portfólio</a>
+              </li>
+
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <div className="w-full max-w-6xl">
+          <main className="min-h-screen w-full flex flex-col justify-center items-center">
+            <h1 className="text-4xl md:text-7xl">Marcele Monteiro</h1>
+            <h2 className="text-2xl md:text-6xl">Desenvolvedora Front-end</h2>
+
+            <div className="flex gap-4 mt-10">
+              <LinkedInLogo fill="rgb(229, 229, 229)" width="40" />
+              <GitHubLogo fill="rgb(229, 229, 229)" width="45" />
+              <EmailIcon fill="rgb(229, 229, 229)" width="45" />
+            </div>
+          </main>
+
+          {/* 
+            position: absolute;
+            top: 90%;
+            left: 50%;
+          */}
+
+          <div className="absolute top-[90%] right-[48%] animate-bounce">
+            <a href="#about">
+              <CaretDownIcon />
+            </a>
+          </div>
+
+          <section id="about" className="px-4 lg:px-0 py-20">
+            <h2 className="text-4xl">Sobre mim</h2>
+
+            <p className="my-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Blanditiis nemo culpa quidem, officiis nam praesentium,
+              necessitatibus doloremque dolore tenetur sapiente placeat eos
+              possimus odit numquam omnis nesciunt rerum quisquam! Laboriosam.
+            </p>
+
+            <p className="my-6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Reiciendis quis error in. Eligendi, quos molestias? Ad delectus
+              eligendi non quibusdam corrupti odio, mollitia eos voluptas minus
+              ex cum? Asperiores, temporibus.
+            </p>
+
+            <p className="my-6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+              est libero eius natus ducimus, modi dolor laborum? Fuga, nemo id.
+              Sed quos ducimus nesciunt magni dolores rem earum recusandae
+              dolorum!
+            </p>
+
+            <a href="#contact">Entre em contato!</a>
+          </section>
+
+          <section id="skills" className="px-4 lg:px-0 py-20">
+            <h2 className="text-4xl">Habilidades</h2>
+
+            <p className="my-6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+              est libero eius natus ducimus, modi dolor laborum? Fuga, nemo id.
+              Sed quos ducimus nesciunt magni dolores rem earum recusandae
+              dolorum!
+            </p>
+
+            <Skills />
+          </section>
+
+          <section id="portfolio" className="px-4 lg:px-0 py-20">
+            <h2 className="text-4xl">Projetos</h2>
+
+            <p className="my-6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+              est libero eius natus ducimus, modi dolor laborum? Fuga, nemo id.
+              Sed quos ducimus nesciunt magni dolores rem earum recusandae
+              dolorum!
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+              <div className="p-4 rounded-md border-2">
+                <div className="flex justify-center mb-8">
+                  <Image
+                    src={"/assets/images/shortly-project.png"}
+                    width={400}
+                    height={400}
+                    alt="Project"
+                  />
+                </div>
+
+                <h3 className="text-3xl mb-2">
+                  Encurtador de URL usando a API T.ly
+                </h3>
+
+                <p>
+                  Site para encurtar URLS utilizando a API T.ly. Esse projeto é
+                  um desafio do Front-end Mentor, site com vários desafios de
+                  interfaces para implementar e aperfeiçoar suas técnicas de
+                  desenvolvimento web front-end.
+                </p>
+
+                <div className="mt-8 flex gap-4">
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-purple-300"
+                  >
+                    Ver site
+                  </a>
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-purple-300"
+                  >
+                    Ver código
+                  </a>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-md border-2">
+                <div className="flex justify-center mb-8">
+                  <Image
+                    src={"/assets/images/shortly-project.png"}
+                    width={400}
+                    height={400}
+                    alt="Project"
+                  />
+                </div>
+
+                <h3 className="text-3xl mb-2">
+                  Encurtador de URL usando a API T.ly
+                </h3>
+
+                <p>
+                  Site para encurtar URLS utilizando a API T.ly. Esse projeto é
+                  um desafio do Front-end Mentor, site com vários desafios de
+                  interfaces para implementar e aperfeiçoar suas técnicas de
+                  desenvolvimento web front-end.
+                </p>
+
+                <div className="mt-8 flex gap-4">
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+                  >
+                    Ver site
+                  </a>
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+                  >
+                    Ver código
+                  </a>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-md border-2">
+                <div className="flex justify-center mb-8">
+                  <Image
+                    src={"/assets/images/shortly-project.png"}
+                    width={400}
+                    height={400}
+                    alt="Project"
+                  />
+                </div>
+
+                <h3 className="text-3xl mb-2">
+                  Encurtador de URL usando a API T.ly
+                </h3>
+
+                <p>
+                  Site para encurtar URLS utilizando a API T.ly. Esse projeto é
+                  um desafio do Front-end Mentor, site com vários desafios de
+                  interfaces para implementar e aperfeiçoar suas técnicas de
+                  desenvolvimento web front-end.
+                </p>
+
+                <div className="mt-8 flex gap-4">
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+                  >
+                    Ver site
+                  </a>
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+                  >
+                    Ver código
+                  </a>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-md border-2">
+                <div className="flex justify-center mb-8">
+                  <Image
+                    src={"/assets/images/shortly-project.png"}
+                    width={400}
+                    height={400}
+                    alt="Project"
+                  />
+                </div>
+
+                <h3 className="text-3xl mb-2">
+                  Encurtador de URL usando a API T.ly
+                </h3>
+
+                <p>
+                  Site para encurtar URLS utilizando a API T.ly. Esse projeto é
+                  um desafio do Front-end Mentor, site com vários desafios de
+                  interfaces para implementar e aperfeiçoar suas técnicas de
+                  desenvolvimento web front-end.
+                </p>
+
+                <div className="mt-8 flex gap-4">
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+                  >
+                    Ver site
+                  </a>
+                  <a
+                    href="/"
+                    className="font-bold p-2 rounded-md border-2 border-neutral-700 hover:bg-neutral-700 hover:text-neutral-100"
+                  >
+                    Ver código
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" className="px-4 lg:px-0 py-20">
+            <h2 className="text-4xl">Contato</h2>
+
+            <p className="my-6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
+              est libero eius natus ducimus, modi dolor laborum? Fuga, nemo id.
+              Sed quos ducimus nesciunt magni dolores rem earum recusandae
+              dolorum!
+            </p>
+
+            <div className="flex gap-4">
+              <EmailIcon fill="#454545" />
+              <a href="mailto:marcelepmonteiro@gmail.com" className="font-bold">
+                marcelepmonteiro@gmail.com
+              </a>
+            </div>
+
+            <div className="flex gap-4 mt-10">
+              <LinkedInLogo fill="#404040" width="40" />
+              <GitHubLogo fill="#404040" width="45" />
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer className="text-center p-4 bg-neutral-800 text-neutral-100">
+        <span className="font-light">© 2023 Marcele Monteiro</span>
+      </footer>
+    </>
   );
 }
