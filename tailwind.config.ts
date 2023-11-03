@@ -6,6 +6,13 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        'fundo': "url('/assets/images/flower.webp')",
+      }
+    }
+  },
   plugins: [],
   darkMode: ["class", '[data-mode="dark"]'],
 };

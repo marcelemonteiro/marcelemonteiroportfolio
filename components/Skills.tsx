@@ -99,7 +99,7 @@ export default function Skills() {
             className="md:hidden"
             onClick={() => setExpandMobile(true)}
           >
-            <span className="bg-pink-800 rounded-md p-4 block uppercase text-sm">
+            <span className="bg-neutral-800 rounded-md p-4 block uppercase text-sm">
               {t("seeMoreButton")}
             </span>
           </button>

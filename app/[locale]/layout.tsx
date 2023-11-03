@@ -32,7 +32,8 @@ export default async function RootLayout({
     <html lang={locale} className="scroll-smooth">
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <div className="text-xl text-neutral-200 bg-gradient-to-b from-[#4C0070] via-[#9A0680] to-[#160040]">
+          {/* <div className="text-xl font-light text-neutral-200 bg-gradient-to-b from-[#4C0070] via-[#9A0680] to-[#160040]"> */}
+          <div className="text-xl text-neutral-200 bg-black">
             {/* <Header lang={locale} /> */}
             {children}
             {/* <Footer /> */}
