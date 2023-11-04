@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex justify-center">
         <header
           className={`fixed z-10 w-full ${
-            expandNav ? "bg-[#4c0070]" : "bg-[#222]"
+            expandNav ? "bg-[#4c0070]" : "bg-[#151d29]"
           } pt-4 flex flex-col justify-end transition-all ease-linear`}
         >
           <button
@@ -60,9 +60,9 @@ export default function Home() {
         </header>
 
         <div className="w-full">
-          <main className="relative min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-tl from-[#222] via-purple-900 to-violet-600">
+          <main className="relative min-h-screen w-full flex flex-col justify-center items-center">
             {/* <Image className="absolute w-full h-full object-cover opacity-[15%] invert backdrop-opacity-15"  src="/fundoo.jpg" width={1000} height={1000} alt="fundo" /> */}
-            <h1 className="text-4xl md:text-7xl">Marcele Monteiro</h1>
+            <h1 className="text-4xl md:text-7xl font-bold bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent">Marcele Monteiro</h1>
             <h2 className="text-2xl md:text-6xl">Desenvolvedora Front-end</h2>
 
             <div className="flex gap-4 mt-10">
@@ -84,7 +84,7 @@ export default function Home() {
             </a>
           </div>
 
-          <section id="about" className="px-4 lg:px-0 py-20 bg-neutral-800">
+          <section id="about" className="px-4 lg:px-0 py-20 bg-[#1b2533]">
             <div className="max-w-6xl m-auto">
               <h2 className="text-4xl">Sobre mim</h2>
 
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="portfolio" className="px-4 lg:px-0 py-20 bg-neutral-800">
+          <section id="portfolio" className="px-4 lg:px-0 py-20 bg-[#1b2533]">
             <div className="max-w-6xl m-auto">
               <h2 className="text-4xl">Projetos</h2>
 
@@ -321,7 +321,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="text-center p-4 bg-neutral-800 text-neutral-100">
+      <footer className="text-center p-4 bg-[#1b2533] text-neutral-100">
         <span className="font-light">© 2023 Marcele Monteiro</span>
       </footer>
     </>
