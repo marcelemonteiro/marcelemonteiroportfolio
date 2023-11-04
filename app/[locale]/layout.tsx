@@ -7,7 +7,7 @@ import { Montserrat } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const montserrat = Montserrat({ subsets: ['latin']});
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export function generateStaticParams() {
   return [{ locale: "pt" }, { locale: "en" }];
@@ -34,14 +34,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`scroll-smooth ${montserrat.className}`}>
-      <body>
+      <body className="text-xl text-neutral-200 bg-[#111827]">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* <div className="text-xl font-light text-neutral-200 bg-gradient-to-b from-[#4C0070] via-[#9A0680] to-[#160040]"> */}
-          <div className="text-xl text-neutral-200 bg-[#111827]">
-            {/* <Header lang={locale} /> */}
-            {children}
-            {/* <Footer /> */}
-          </div>
+          <Header />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
