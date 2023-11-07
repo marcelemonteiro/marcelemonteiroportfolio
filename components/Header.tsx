@@ -29,19 +29,19 @@ export default function Header() {
           className="flex flex-col md:flex-row md:justify-end md:pr-10 md:pb-4 items-center gap-6"
           onClick={() => setExpandNav(false)}
         >
-          <li>
+          <li className="hover:text-[#e5a68f]">
             <a href="#about">Sobre</a>
           </li>
 
-          <li>
+          <li className="hover:text-[#e5a68f]">
             <a href="#skills">Habilidades</a>
           </li>
 
-          <li>
+          <li className="hover:text-[#e5a68f]">
             <a href="#portfolio">Portfólio</a>
           </li>
 
-          <li>
+          <li className="hover:text-[#e5a68f]">
             <a href="#contact">Contato</a>
           </li>
         </ul>

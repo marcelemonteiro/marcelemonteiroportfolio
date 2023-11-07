@@ -10,9 +10,27 @@ export default function Hero() {
       <h2 className="text-2xl md:text-6xl">Desenvolvedora Front-end</h2>
 
       <div className="flex gap-4 mt-10">
-        <LinkedInLogo fill="rgb(229, 229, 229)" width="40" />
-        <GitHubLogo fill="rgb(229, 229, 229)" width="45" />
-        <EmailIcon fill="rgb(229, 229, 229)" width="45" />
+        <a href="https://www.linkedin.com/in/marcele-monteiro/">
+          <LinkedInLogo
+            fill="rgb(229, 229, 229)"
+            width="40"
+            className="hover:fill-[#e5a68f]"
+          />
+        </a>
+        <a href="https://github.com/marcelemonteiro">
+          <GitHubLogo
+            fill="rgb(229, 229, 229)"
+            width="45"
+            className="hover:fill-[#e5a68f]"
+          />
+        </a>
+        <a href="mailto:marcelepmonteiro@gmail.com">
+          <EmailIcon
+            fill="rgb(229, 229, 229)"
+            width="45"
+            className="hover:fill-[#e5a68f]"
+          />
+        </a>
       </div>
     </main>
   );

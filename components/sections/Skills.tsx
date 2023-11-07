@@ -7,9 +7,8 @@ export default function Skills() {
         <h2 className="text-4xl">Habilidades</h2>
 
         <p className="my-6">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque est
-          libero eius natus ducimus, modi dolor laborum? Fuga, nemo id. Sed quos
-          ducimus nesciunt magni dolores rem earum recusandae dolorum!
+          Essas são as linguagens e ferramentas que tenho familiaridade e
+          experiência.
         </p>
 
         <SkillList />
